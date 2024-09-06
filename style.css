@@ -259,17 +259,16 @@ h1 {
 
 
 /* Testimonios */
-
 .testimonios {
-  padding: 40px 40px 80px 40px;
+  padding: 4vw 4vw 8vw 4vw; /* Ajuste de padding con unidades relativas */
 }
 
 .testimonios .carousel {
-  max-width: 800px;
+  max-width: 80vw; /* Ajuste para ser más flexible */
 }
 
 .carousel-item {
-  height: 500px;
+  height: 50vh; /* Ajuste para mantener altura relativa a la pantalla */
 }
 
 .carousel-item .container {
@@ -282,14 +281,14 @@ h1 {
 }
 
 .testimonio-imagen {
-  height: 95px;
-  width: 95px;
-  margin: 10px 10px 20px 10px;
+  height: 10vw; /* Ajuste de imagen con unidades relativas */
+  width: 10vw;
+  margin: 2vw 2vw 3vw 2vw;
 }
 
 .testimonio-texto {
   max-width: 70%;
-  font-size: 18px;
+  font-size: 1.2rem; /* Ajuste de tamaño de texto */
   text-align: center;
   font-family: 'Share Tech Mono', monospace;
 }
@@ -304,13 +303,14 @@ h1 {
 }
 
 .testimonio-footer .cliente {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .testimonio-info .cargo {
   font-size: 0.9rem;
   color: #656060;
 }
+
 
 /* Contacto */
 
@@ -450,6 +450,28 @@ footer {
 @media screen and (min-width: 700px) {
   .hero-inferior-imagen {
     max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonios {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .carousel-item {
+    height: auto; /* Ajuste de altura automática */
+  }
+
+  .testimonio-imagen {
+    height: 12vw; /* Ajuste de tamaño de imagen */
+    width: 12vw;
+  }
+
+  .testimonio-texto {
+    font-size: 1rem; /* Ajuste del tamaño de texto */
+  }
+
+  .testimonio-info .cargo {
+    font-size: 0.8rem;
   }
 }
 
